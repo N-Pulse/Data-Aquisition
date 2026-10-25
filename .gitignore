@@ -1,0 +1,11 @@
+cat >> .gitignore <<'EOF'
+__pycache__/
+*.pyc
+.DS_Store
+code_experiments_fall_2025/videos_measures_720p/
+code_experiments_fall_2025/Data/
+code_experiments_fall_2025/logs/
+logs/
+*.xdf
+*.edf
+EOF
