@@ -23,7 +23,7 @@ prefs.general['moviesLib'] = ['ffpyplayer', 'moviepy', 'avbin']
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Directory with video instructions
-MEDIA_DIR = os.path.join(SCRIPT_DIR, "videos_measures_720p")
+MEDIA_DIR = os.path.join(SCRIPT_DIR, "reencoded")
 #MEDIA_DIR = r"C:\Users\eeguser\Documents\NPulseBCI\github\DSI\data\kraken_recording\data\videos_measures_720p"
  
 # ----------------------------- Codes -----------------------------
@@ -217,7 +217,7 @@ def setup_gui():
     # -1) Subject & acquisition params
     dS = gui.Dlg(title="Participant / Acquisition")
     dS.addField("Subject ID (e.g. sub-001)", "sub-001")
-    dS.addField("EEG sampling rate (Hz)", 1000)
+    dS.addField("EEG sampling rate (Hz)", 1024)
     dS.addField("EMG sampling rate (Hz)", 2000)
     okS = dS.show()
     if not dS.OK:
